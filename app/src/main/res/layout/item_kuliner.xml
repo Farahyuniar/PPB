@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    card_view:cardCornerRadius="6dp"
+    card_view:cardElevation="3dp"
+    card_view:cardUseCompatPadding="true">
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:orientation="vertical"
+        android:padding="5dp">
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/imgfoto"
+                android:layout_width="75dp"
+                android:layout_height="100dp"
+                android:layout_alignParentTop="true"
+                android:src="@drawable/soto" />//image blm ada
+
+
+            <TextView
+                android:id="@+id/txtNama"
+                android:layout_width="243dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_marginTop="11dp"
+                android:layout_toRightOf="@id/imgfoto"
+                android:text="SOTO AYAM"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/txtAlamat"
+                android:layout_width="245dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@id/imgfoto"
+                android:text="Soto Ayam Lamongan merupakan kuliner khas Jawa Timur" />
+
+            <!-- TextView NoHp Mahasiswa -->
+        </RelativeLayout>
+    </LinearLayout>
+</androidx.cardview.widget.CardView>
